@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="alphacoreApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">alphacore</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#/work">Work</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button> -->
+        <div class="logo-title">
+          <a ui-sref="home">
+              <img src="images/wolf.jpg" class="brand-img" width="70px" height="70px">
+          </a>
+          <span class="brand-title">Alpha<strong class="dev">Core</strong></span>
+        </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class=" navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a ng-href="#/home">Home</a></li>
+            <li class="nav-slash">/</li>
+            <li class="nav-item"><a ng-href="#/work">Work</a></li>
+            <li class="nav-slash">/</li>
+            <li class="nav-item"><a ng-href="#/packages">Packages</a></li>
+            <li class="nav-slash">/</li>
+            <li class="nav-item"><a ng-href="#/contact">Contact</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+    <div ng-view=""></div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div id="contact" class="container-fluid">
+        <h1 style="text-align: left; margin-bottom: 15px; margin-left: 12px;
+                font-family: 'robotothin', san-serif; pointer-events: none;">Say hello.</h1>
+    <!-- EMAIL LINK -->
+        <div class="container-fluid contact">
+            <div class="row">
+                <div class="col-sm-4 contact-info">
+                    <h4 class="contact-title">General Inquiries</h4>
+                    <a href="mailto:alphacoredesign@gmail.com?Subject=New%20Business" target="_top">
+                        <span class="email social-media-item">alphacoredesign@gmail.com</span>
+                    </a>
+                </div>
+                <div class="col-sm-4 contact-info">
+                    <h4 class="contact-title">Follow Us</h4>
+                    <ul class="social-media">
+                        <!-- YOUTUBE LINK -->
+                        <div class="yt-link">
+                            <a href="https://www.youtube.com/channel/UCP0_eisnCo6de9foQkU2Ygw?view_as=public" target="_blank">
+                                <li class="social-media-item">YouTube</li>
+                            </a>
+                        </div>
+                        <!-- INSTAGRAM LINK -->
+                        <div class="yt-link">
+                            <a href="https://instagram.com/alphacoredesign/" target="_blank">
+                                <li class="social-media-item">Instagram</li>
+                            </a>
+                        </div>
+                        <!-- FACEBOOK LINK -->
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/alphacoredesign" target="_blank">
+                                <li class="social-media-item">Facebook</li>
+                            </a>
+                        </div>
+                        <!-- TWITTER LINK -->
+                        <div class="social-media">
+                            <a href="https://twitter.com/AlphaCoreDesign" target="_blank">
+                                <li class="social-media-item">Twitter</li>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-sm-4 contact-logo">
+                    <img src="images/wolf.jpg" height="170px" width="170px">
+                </div>
+            </div>
+    </div>
+
+        </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
